@@ -7,7 +7,8 @@ Recurso educativo sobre arquitectura desacoplada y microservicios, construido co
 - `index.html`: contenido semántico y referencias a Bootstrap, Bootstrap Icons y los archivos locales.
 - `css/styles.css`: estilos, diagrama adaptable y estados responsivos.
 - `js/script.js`: navegación móvil, reproductor local, cuestionario y actualización del año.
-- `img/` y `video/`: recursos del proyecto. No se incluyen medios educativos por defecto.
+- `img/`: imágenes del proyecto.
+- `video/arquitectura desacoplada.mp4`: video educativo cargado por defecto en el reproductor.
 
 ## Ejecutar localmente
 
@@ -21,6 +22,6 @@ Visita `http://localhost:8000`.
 
 ## Reproducir un video
 
-En la sección «Aprende con un video», selecciona un archivo MP4 o WebM de tu dispositivo. El video se reproduce localmente en el navegador, no se sube ni se guarda en el proyecto. El botón «Restablecer reproductor» libera la URL temporal. Para distribuir un video a todos los visitantes, se necesita alojarlo junto al sitio o utilizar un backend o servicio de almacenamiento.
+La sección «Aprende con un video» reproduce inicialmente `video/arquitectura desacoplada.mp4`. También puedes seleccionar otro archivo MP4 o WebM de tu dispositivo. Ese archivo alternativo se reproduce localmente en el navegador, no se sube ni se guarda en el proyecto. El botón «Restablecer reproductor» libera la URL temporal y vuelve al video incluido. Para distribuir otros videos a todos los visitantes, se necesita alojarlos junto al sitio o utilizar un backend o servicio de almacenamiento.
 
 El cuestionario funciona íntegramente en el navegador y no requiere base de datos.

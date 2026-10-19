@@ -19,7 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const videoName = document.getElementById("videoFileName");
     const videoStatus = document.getElementById("videoStatus");
     const resetVideoButton = document.getElementById("resetVideo");
+    const defaultVideoName = "arquitectura desacoplada.mp4";
     let activeVideoUrl = null;
+
+    videoName.textContent = defaultVideoName;
+    videoName.title = defaultVideoName;
+    setVideoStatus("Video educativo del proyecto listo para reproducir.", "success");
 
     function setVideoStatus(message, state = "") {
         videoStatus.textContent = message;
@@ -65,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     videoPlayer.addEventListener("error", () => {
-        if (!activeVideoUrl) return;
         setVideoStatus("No se pudo reproducir este video. Comprueba que el archivo y su códec sean compatibles.", "error");
     });
 
@@ -75,11 +79,11 @@ document.addEventListener("DOMContentLoaded", () => {
         videoPlayer.load();
         releaseVideoUrl();
         videoInput.value = "";
-        videoFrame.classList.remove("has-video");
-        videoName.textContent = "Ningún archivo seleccionado";
-        videoName.removeAttribute("title");
+        videoFrame.classList.add("has-video");
+        videoName.textContent = defaultVideoName;
+        videoName.title = defaultVideoName;
         resetVideoButton.disabled = true;
-        setVideoStatus("Selecciona un archivo para comenzar.");
+        setVideoStatus("Video educativo del proyecto listo para reproducir.", "success");
     });
 
     // Las respuestas correctas y sus explicaciones solo se consultan al finalizar.
