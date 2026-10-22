@@ -151,7 +151,7 @@ button, input { font: inherit; }
 .video-layout { overflow: hidden; background: var(--paper); border: 1px solid #cdddf1; box-shadow: 0 16px 40px rgba(11,31,58,.07); }
 .video-frame-wrap { padding: 16px; background: #0a1729; }
 .video-frame { position: relative; display: grid; min-height: 360px; aspect-ratio: 16 / 9; place-items: center; overflow: hidden; background: #091523; }
-.video-frame video { display: none; width: 100%; height: 100%; object-fit: contain; }
+.video-frame video { position: absolute; inset: 0; display: none; width: 100%; height: 100%; object-fit: contain; }
 .video-frame.has-video video { display: block; }
 .video-frame.has-video .video-placeholder { display: none; }
 .video-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; padding: 25px; color: #aab8c8; text-align: center; }
