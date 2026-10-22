@@ -379,6 +379,99 @@ button, input { font: inherit; }
     .footer-main nav { grid-column: auto; justify-content: flex-start; gap: 11px; }
     .footer-bottom { gap: 10px; font-size: 8px; }
 }
+
+.site-nav .nav-link { font-size: 14px; }
+.nav-quiz { font-size: 14px; }
+.hero-section .eyebrow { font-size: 12px; }
+.hero-lead { font-size: 22px; }
+.hero-description { font-size: 16px; line-height: 1.7; }
+.hero-actions .btn { font-size: 14px; }
+.hero-note { font-size: 13px; }
+.visual-topline { font-size: 10px; }
+.hero-client { font-size: 13px; }
+.hero-api strong { font-size: 14px; }
+.hero-api small { font-size: 11px; }
+.mini-service b { font-size: 12px; }
+.mini-service small { font-size: 10px; }
+.visual-footer { font-size: 11px; }
+.hero-bottom { font-size: 11px; }
+.section-heading .eyebrow { font-size: 12px; }
+.section-heading > div:last-child > p { font-size: 16px; line-height: 1.7; }
+.concept-card {
+    padding: 27px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(11, 31, 58, .045);
+}
+.concept-card:hover { box-shadow: 0 16px 34px rgba(11, 31, 58, .1); }
+.card-index { font-size: 13px; }
+.concept-card h3 { font-size: 21px; }
+.concept-card p { font-size: 15px; line-height: 1.75; }
+.card-example { font-size: 13px; line-height: 1.6; }
+.flow-strip span { font-size: 12px; }
+.comparison-row > span { font-size: 13px; }
+.comparison-row p { margin: 0; font-size: 13px; line-height: 1.6; }
+.comparison-card > small { font-size: 12px; line-height: 1.6; }
+.architecture-board { border-radius: 14px; box-shadow: 0 16px 38px rgba(11, 31, 58, .08); }
+.board-heading { font-size: 12px; }
+.board-tag { font-size: 11px; }
+.diagram-node strong, .service-node strong { font-size: 13px; }
+.diagram-node small, .service-node > small { font-size: 11px; }
+.service-bus { font-size: 11px; }
+.db-node { font-size: 11px; }
+.diagram-legend { font-size: 11px; }
+.diagram-caption { font-size: 14px; line-height: 1.6; }
+.architecture-note { padding: 20px; border-radius: 12px; box-shadow: 0 6px 20px rgba(11, 31, 58, .04); }
+.architecture-note > span { font-size: 14px; }
+.architecture-note h3 { font-size: 16px; }
+.architecture-note p { font-size: 13px; line-height: 1.6; }
+.balance-panel { padding: 28px 30px; border-radius: 14px; }
+.balance-panel-heading > div > span { font-size: 11px; }
+.balance-panel-heading h3 { font-size: 25px; }
+.balance-list strong { font-size: 14px; }
+.balance-list small { font-size: 13px; line-height: 1.55; }
+.decision-strip { border-radius: 0 10px 10px 0; }
+.decision-strip p { font-size: 14px; line-height: 1.6; }
+.quiz-heading > p:last-child { font-size: 15px; }
+.quiz-shell { border-radius: 16px; }
+.quiz-progress-top { font-size: 11px; }
+.quiz-question legend { font-size: 23px; }
+.answer-option { border-radius: 9px; }
+.answer-option span { font-size: 14px; line-height: 1.55; }
+.quiz-feedback { font-size: 13px; }
+.quiz-controls > span { font-size: 12px; }
+.quiz-controls .btn { font-size: 13px; }
+.result-score p, .result-summary { font-size: 14px; }
+.result-feedback { font-size: 14px; line-height: 1.6; }
+.review-item { padding: 13px 15px; border-radius: 0 8px 8px 0; }
+.review-item h4 { font-size: 13px; }
+.review-item p { font-size: 12px; line-height: 1.6; }
+.retry-quiz { font-size: 13px; }
+.conclusion-copy > p:not(.eyebrow) { font-size: 16px; line-height: 1.75; }
+.btn-dark-blue, .conclusion-quiz-link { font-size: 13px; }
+.conclusion-side { font-size: 10px; }
+.footer-main > p, .footer-main nav a { font-size: 13px; }
+.footer-bottom { font-size: 11px; }
+
+@media (max-width: 767.98px) {
+    .hero-lead { font-size: 20px; }
+    .hero-description, .section-heading > div:last-child > p,
+    .conclusion-copy > p:not(.eyebrow) { font-size: 15px; }
+    .concept-card { padding: 22px; }
+    .architecture-note { padding: 17px; }
+    .balance-panel { padding: 22px; }
+    .quiz-shell { padding: 24px 22px; }
+}
+
+@media (max-width: 479.98px) {
+    .visual-topline, .visual-footer { font-size: 8px; }
+    .hero-client { font-size: 10px; }
+    .hero-api strong { font-size: 10px; }
+    .hero-api small { font-size: 8px; }
+    .mini-service b { font-size: 9px; }
+    .mini-service small { font-size: 8px; }
+    .hero-bottom { font-size: 9px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
