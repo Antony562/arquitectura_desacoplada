@@ -150,8 +150,29 @@ button, input { font: inherit; }
 .video-section { background: var(--blue-pale); }
 .video-layout { overflow: hidden; background: var(--paper); border: 1px solid #cdddf1; box-shadow: 0 16px 40px rgba(11,31,58,.07); }
 .video-frame-wrap { padding: 16px; background: #0a1729; }
-.video-frame { position: relative; display: grid; min-height: 360px; aspect-ratio: 16 / 9; place-items: center; overflow: hidden; background: #091523; }
-.video-frame video { position: absolute; inset: 0; display: none; width: 100%; height: 100%; object-fit: contain; }
+/* Controlar el tamaño del cuadro del video */
+.video-frame {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 420px;
+    min-height: 0;
+    aspect-ratio: auto;
+    place-items: center;
+    overflow: hidden;
+    background: #091523;
+}
+
+/* Mostrar el video completo dentro del cuadro */
+.video-frame video {
+    position: absolute;
+    inset: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
 .video-frame.has-video video { display: block; }
 .video-frame.has-video .video-placeholder { display: none; }
 .video-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; padding: 25px; color: #aab8c8; text-align: center; }
@@ -311,7 +332,11 @@ button, input { font: inherit; }
     .diagram-caption { padding: 12px 14px; font-size: 10px; }
     .architecture-note { padding: 14px; }
     .video-frame-wrap { padding: 9px; }
-    .video-frame { min-height: 220px; }
+    /* Reducir el reproductor en pantallas pequeñas */
+    .video-frame {
+        height: 280px;
+        min-height: 0;
+    }
     .video-sidebar { padding: 23px 20px; }
     .video-sidebar h3 br { display: initial; }
     .video-footnote { font-size: 10px; }
